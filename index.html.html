@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbearia Fusion Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A; --panel:#141414; --yellow:#F2B705; --paper:#F5F1E6; --muted:#A8A294; --line:#2A2A2A;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--black);color:var(--paper);font:400 17px/1.6 Barlow,system-ui,sans-serif}
+h1,h2{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;line-height:.95;margin:0;text-transform:uppercase}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+
+.hero{padding:52px 0 60px;border-bottom:4px solid var(--yellow);
+  background:radial-gradient(ellipse at 20% 0%,#1d1a0e 0%,var(--black) 60%)}
+.logo{display:block;width:132px;height:132px;border-radius:50%;border:3px solid var(--yellow);margin-bottom:30px}
+.hero h1{font-size:clamp(64px,17vw,168px);letter-spacing:1px}
+.hero p.lead{font-size:clamp(19px,2.6vw,23px);max-width:30ch;margin:22px 0 30px;color:var(--paper)}
+.btn{display:inline-block;background:var(--yellow);color:var(--black);font-weight:600;text-decoration:none;padding:16px 28px;border-radius:6px}
+.btn:hover{filter:brightness(1.1)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--paper);outline-offset:3px}
+.note{font-size:15px;margin-top:20px;color:var(--muted)}
+
+section{padding:48px 0}
+section h2{font-size:clamp(36px,6vw,56px);margin-bottom:26px}
+.menu{list-style:none;margin:0;padding:0;max-width:640px}
+.menu li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.menu .name{font-weight:600;font-size:19px}
+.menu .desc{display:block;font-weight:400;color:var(--muted);font-size:15px}
+.menu .price{font-family:Anton,sans-serif;font-size:26px;color:var(--yellow);white-space:nowrap}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hours{width:100%;border-collapse:collapse;max-width:420px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:600;color:var(--yellow)}
+.addr{font-size:20px;margin:0 0 20px}
+.addr small{display:block;color:var(--muted);font-size:15px;margin-top:6px}
+footer{border-top:4px solid var(--yellow);padding:22px 0 30px;font-weight:600}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer span:last-child{color:var(--yellow)}
+@media (max-width:680px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="data:image/jpeg;base64,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" alt="Logo da Barbearia Fusion Club" width="132" height="132">
+    <h1>Fusion<br>Club</h1>
+    <p class="lead">Barbearia com corte afiado, barba no capricho e atendimento com hora marcada.</p>
+    <a class="btn" href="https://wa.me/5571999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    <p class="note">Página de demonstração. Preços, horários e contatos são exemplos.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section id="servicos">
+    <h2>Serviços e preços</h2>
+    <ul class="menu">
+      <li><span class="name">Corte masculino<span class="desc">Tesoura ou máquina, com acabamento</span></span><span class="price">R$ 40</span></li>
+      <li><span class="name">Barba<span class="desc">Toalha quente e navalha</span></span><span class="price">R$ 30</span></li>
+      <li><span class="name">Corte + barba<span class="desc">O combo completo</span></span><span class="price">R$ 65</span></li>
+      <li><span class="name">Sobrancelha<span class="desc">Na navalha ou na pinça</span></span><span class="price">R$ 15</span></li>
+      <li><span class="name">Pigmentação<span class="desc">Barba ou cabelo</span></span><span class="price">R$ 30</span></li>
+    </ul>
+  </section>
+  <section>
+    <div class="two">
+      <div>
+        <h2>Horários</h2>
+        <table class="hours">
+          <tr><td>Segunda a sexta</td><td>9h às 20h</td></tr>
+          <tr><td>Sábado</td><td>8h às 18h</td></tr>
+          <tr><td>Domingo</td><td>Fechado</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>Onde estamos</h2>
+        <p class="addr">Rua Exemplo, 123, Centro<small>Siga a Fusion Club no Instagram: @fusionclub__</small></p>
+        <a class="btn" href="https://wa.me/5571999999999" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Barbearia Fusion Club</span><span>@fusionclub__</span></div></footer>
+</body>
+</html>
